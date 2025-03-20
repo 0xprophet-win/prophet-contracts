@@ -11,29 +11,4 @@ interface IProphetTicketManager {
         external
         view
         returns (uint256);
-    
-    function mintTickets(
-        address to,
-        uint256 lotteryId,
-        uint128 bucketLowerBound,
-        uint256 count,
-        bytes memory data
-    )
-        external;
-
-    function burnTickets(
-        address from,
-        uint256 lotteryId,
-        uint128 bucketLowerBound,
-        uint256 count
-    )
-        external;
-
-    function generateTicketId(
-        uint256 lotteryId,
-        uint128 bucketLowerBound
-    )
-        external
-        pure
-        returns (uint256);
 }

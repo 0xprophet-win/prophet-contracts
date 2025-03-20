@@ -95,16 +95,4 @@ interface IProphet {
         address indexed recipient,
         uint256 amount
     );
-
-    event Refund(
-        address indexed user,
-        address token,
-        uint256 amount,
-        bool claimed
-    );
-
-    event SetTrustedRemote(
-        uint16 remoteChainId,
-        bytes path
-    );
 }
